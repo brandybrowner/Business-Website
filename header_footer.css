@@ -1,0 +1,65 @@
+.banner {
+  width: 940px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+#logo {
+  height: 200px;
+  float: left;
+}
+
+.social-media {
+  float: right;
+  width: 200px;
+  height: 50px;
+  margin-top: 165px;
+}
+
+.nav { 
+	/*position: relative;*/
+	background-color:#f4786e;
+	height: 50px;
+  text-decoration: none;
+}
+
+#control {
+  margin-left: 290px;
+}
+
+.fcw {
+  display: inline-block;
+  background: #f4786e;
+  font-family: Bad Script, Arial, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  width: 200px;
+}
+
+.nav-link, a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #35cae2;
+}
+
+footer {
+  clear: both;
+  float: left;
+  width: 940px;
+  width: 100%;
+  height: 100px;
+  margin-top:30px;
+}
+
+.magic {
+  font-family: Arial, sans-serif;
+  color: #f4786e;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+

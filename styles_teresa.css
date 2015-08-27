@@ -1,0 +1,108 @@
+/*these are the colors for reference 
+aqua from logo: #35cae2
+Light green #97e3b5
+dark green #5eb781
+dark pink (headers): #f4786e
+body text: #000000
+light pink: #fcc8ba
+ivory: #f8f2e6
+brown: #624837 */
+
+
+/*this is the ID for the cupcake generator question (that also turns into the answer)*/
+#generator {
+   font-family: Bad Script, Arial, sans-serif;
+   color: #f4786e;
+   font-size: 42px;
+   text-align: center;
+ }
+
+ /* this initially hides the .fadingcupcake on recipe main, so it can appear to fade in on page load */
+.fadingcupcake {
+  display: none;
+  margin: 0px auto;
+  float: right;
+  margin-top: 100px;
+  border: 0px;
+} 
+
+/*this is the code for the overall tables themselves that shows the grid of cupcakes on two pages*/
+table.cupgrid {
+    width:100%;
+    border:0px;
+   	margin: 0 auto;
+
+}
+/*this is the code for the cells of the tables that show the grid of cupcakes on two pages */
+table.cupgrid td { 
+    padding:10px;
+    font-family: Bad Script, Arial, sans-serif;
+    text-align: center;
+   	color: #35cae2;
+   	font-size: 24px;
+}
+/*these are the styles for the redvelvet recipe page*/
+.recipetitle {
+   font-family: Bad Script, Arial, sans-serif;
+   color: #f4786e;
+   font-size: 42px;
+   text-align: center;
+}
+
+.recipesubtitle {
+   font-family: Bad Script, Arial, sans-serif;
+   color: #f4786e;
+   font-size: 28px;
+}
+
+.recipeprep {
+   font-family: Bad Script, Arial, sans-serif;
+   color: #f4786e;
+   font-size: 18px;
+   text-align: center;
+}
+
+.recipeingredients {
+   font-family: Arial, sans-serif;
+   color: #000000;
+   font-size: 16px;
+   margin-right: 30px;
+}
+
+.recipebody {
+   font-family: Arial, sans-serif;
+   color: #000000;
+   font-size: 16px;
+   padding-right: 50px;
+
+}
+/*These two btn styles one generator ID that are in the cupcake generator on the recipe landing page*/
+.btn {
+  margin: 0px auto 50px auto;
+  width: 30%;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #35cae2;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+}
+
+.btn:hover {
+  margin: 0px auto 50px auto;
+  width: 30%;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #f4786e;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+}
+
+

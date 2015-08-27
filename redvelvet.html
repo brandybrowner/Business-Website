@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- this is the code to Google Fonts Bad Script -->
+    <link href='http://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet' type='text/css'>
+
+    <!-- this  fixes text problems that might come in from content pasted in from elsewhere -->
+    <meta charset="UTF-8">
+
+    <!-- this is the title in the browser bar -->
+    <title>Fairy Cakes: Red Velvet Cupcake Recipe</title>
+
+    <!-- this points to Teresa's CSS styles -->
+    <link rel="stylesheet" type="text/css" href="styles_teresa.css"> 
+
+    <!-- this points to Brandy's CSS styles -->
+    <link rel="stylesheet" type="text/css" href="project.css"> 
+
+    <!-- this points to Brandy's CSS styles -->
+    <link rel="stylesheet" type="text/css" href="header_footer.css"> 
+
+    <!-- this is the mandatory jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- this code that controls the fading-in cupcake/jquery effect -->
+    <script>   
+      $(window).load(function (){
+        $('.fadingcupcake').fadeIn(7000);
+        });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="banner"> 
+       <img id="logo" src="recipeimages/fairy_cakes_hori.png">
+       
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"><img src="recipeimages/facebook.jpg"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img src="recipeimages/twitter.jpg"></a>
+        <a href="https://www.pinterest.com/" target="_blank"><img src="recipeimages/pinterest.jpg"></a>
+      </div>
+      </header>
+
+      <nav class="nav">
+        <ul id="control">
+          <li class="fcw">  <a class="nav-link" href="index.html">Home</a></li>
+          <li class="fcw"> <a class="nav-link" href="about.html">About</a></li>
+          <li class="fcw"> <a class="nav-link" href="recipemain.html">Recipes</a></li>
+        </ul>
+      </nav>
+
+      <p class="recipetitle">Red Velvet Cupcake Recipe</p>
+
+      <p class="recipeprep"> Prep: 30 min |  Cook: 30 min  |  Yield: 8 servings</p>
+
+      <hr>
+
+      <!-- this is the large cupcake that fades-in/jquery effect. the fade only works properly if the inline styling is here instead of the css -->
+      <div class=fadingcupcake> 
+        <img src="recipeimages/redvelvet.jpg" style="height:300px" "width:300px" "center">
+      </div>    <!-- ends div for fading cupcake image-->
+
+      <p class="recipesubtitle">Cupcake Ingredients</p>
+        
+      <ul class="recipeingredients">
+        <li>Vegetable oil for the pans</li>
+        <li>2 1/2 cups all-purpose flour</li>
+        <li>1 1/2 cups sugar</li>
+        <li>1 teaspoon baking soda</li>
+        <li>1 teaspoon fine salt</li>
+        <li>1 teaspoon cocoa powder</li>
+        <li>1 1/2 cups vegetable oil</li>
+        <li>1 cup buttermilk, at room temperature</li>
+        <li>2 large eggs, at room temperature</li>
+        <li>2 tablespoons red food coloring (1 ounce)</li>
+        <li>1 teaspoon white distilled vinegar</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>Crushed pecans, for garnish</li>
+        <li>Cream cheese frosting</li>
+      </ul>    
+
+      <p class="recipesubtitle">Directions</p>
+
+      <div class="recipebody">
+
+        <p>Preheat the oven to 350 degrees F. Lightly oil and flour 3 (9 by 1 1/2-inch round) cake pans. In a large bowl, sift together the flour, sugar, baking soda, salt, and cocoa powder. In another large bowl, whisk together the oil, buttermilk, eggs, food coloring, vinegar, and vanilla.</p>
+
+        <p>Using a standing mixer, mix the dry ingredients into the wet ingredients until just combined and a smooth batter is formed.</p>
+
+        <p>Divide the cake batter evenly among the prepared cake pans. Place the pans in the oven evenly spaced apart. Bake, rotating the pans halfway through the cooking, until the cake pulls away from the side of the pans, and a toothpick inserted in the center of the cakes comes out clean, about 30 minutes.</p>
+
+        <p>Remove the cakes from the oven and run a knife around the edges to loosen them from the sides of the pans. One at a time, invert the cakes onto a plate and then re-invert them onto a cooling rack, rounded-sides up. Let cool completely.</p>
+
+        <p>Frost the cake. Place 1 layer, rounded-side down, in the middle of a rotating cake stand. Using a palette knife or offset spatula spread some of the cream cheese frosting over the top of the cake. (Spread enough frosting to make a 1/4 to 1/2-inch layer.) Carefully set another layer on top, rounded-side down, and repeat. Top with the remaining layer and cover the entire cake with the remaining frosting. Sprinkle the top with the pecans.</p>
+
+      </div> <!-- ends recipebody -->
+
+      <!-- this is the table near the bottom that shows the cupcake from various angles -->
+      <table class="cupgrid">
+        <tr>
+          <td><img src="recipeimages/redvelvet.jpg" style="height:200px">
+          </td>
+          <td><img src="recipeimages/redvelvettop.jpg" style="height:200px">
+          </td>
+          <!-- the redvelvetinside cupcake image needs inline styling to better match the look of the others -->
+          <td><img src="recipeimages/redvelvetinside.jpg" style="height:200px"> 
+          </td>
+        </tr>       
+      </table>
+
+      <footer>
+        
+        <div class="magic">
+          Fairy Cakes have been sprinkled with magic!
+        </div>
+
+        <div class="magic">
+          Copyright|2015 <a href="https://en.wikipedia.org/wiki/Elf" target="_blank">Elves Inc.</a>
+        </div>
+
+      </footer>
+
+    </div>  <!-- ends wrapper -->
+
+  </body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- this is the code to Google Fonts Bad Script -->
+    <link href='http://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet' type='text/css'>
+
+    <!-- this  fixes text problems that might come in from content pasted in from elsewhere -->
+    <meta charset="UTF-8">
+
+    <!-- this is the title in the browser bar -->
+    <title>Fairy Cakes: Recipes</title>
+
+    <!-- this points to Teresa's CSS styles -->
+    <link rel="stylesheet" type="text/css" href="styles_teresa.css"> 
+
+    <!-- this points to Brandy's CSS styles -->
+    <link rel="stylesheet" type="text/css" href="project.css">
+
+       <!-- this points to Brandy's CSS styles -->
+    <link rel="stylesheet" type="text/css" href="header_footer.css"> s
+
+    <!-- this allows jquery to work on the page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="banner"> 
+       <img id="logo" src="recipeimages/fairy_cakes_hori.png">
+      
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"><img src="recipeimages/facebook.jpg"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img src="recipeimages/twitter.jpg"></a>
+        <a href="https://www.pinterest.com/" target="_blank"><img src="recipeimages/pinterest.jpg"></a>
+      </div>
+      
+      </header>
+
+      <nav class="nav">
+        <ul id="control">
+          <li class="fcw">  <a class="nav-link" href="index.html">Home</a></li>
+          <li class="fcw"> <a class="nav-link" href="about.html">About</a></li>
+          <li class="fcw"> <a class="nav-link" href="recipemain.html">Recipes</a></li>
+        </ul>
+      </nav>
+
+      <!-- this is the code that asks if you need help deciding on a cupcake recipe, and then displays a string with a specific answer. It's randomized from the 8 cupcake flavors. -->
+
+      <p id="generator">Not sure which cupcake recipe you should try?</p>
+
+      <script> 
+        function theDecider() {
+          var selectACupcake = ["Red Velvet", "Cookies and Cream", "Sugar Cookie", "Boston Cream", "Tie Dye", "Peanut Butter", "Cookie Dough", "Ice Cream Sundae"];
+          var todaysCupcake = selectACupcake[Math.floor(Math.random() * 8)];
+          document.getElementById("generator").innerHTML = "You should try " + (todaysCupcake) + ", it's delicious!";
+      };
+      </script>
+
+      <!-- this is the button you click to get a cupcake recommendation -->
+      <div class="btn" onclick="theDecider()">Give me a recommendation!
+      </div>
+
+      <hr>
+
+      <p class="recipetitle">Try Our Wonderful Recipes</p>
+
+      <table class="cupgrid">
+        <tr>
+          <td><a href="redvelvet.html"><img src="recipeimages/redvelvet.jpg" style="height:200px; width:200px"></a>
+          </td>
+          <td><img src="recipeimages/cookiesandcream.jpg" style="height:200px; width:200px">
+          </td>
+          <td><img src="recipeimages/sugarcookie.jpg" style="height:200px; width:200px">
+          </td>
+          <td><img src="recipeimages/bostoncream.jpg" style="height:200px; width:200px">
+          </td>
+        </tr>       
+        <tr>
+          <td><a href="redvelvet.html">Red Velvet</td></a>
+          <td>Cookies and Cream</td>
+          <td>Sugar Cookie</td>
+          <td>Boston Cream</td>
+        </tr>
+        <!-- keep this row; it separates the two rows of cupcakes vertically -->
+        <tr height="30px">  
+        </tr> 
+        <tr>
+          <td><img src="recipeimages/tiedye.jpg" style="height:200px; width:200px">
+          </td>
+          <td><img src="recipeimages/peanutbutter.jpg" style="height:200px; width:200px">
+          </td>
+          <td><img src="recipeimages/cookiedough.jpg" style="height:200px; width:200px">
+          </td>
+          <td><img src="recipeimages/icecreamsundae.jpg" style="height:200px; width:200px">
+          </td>
+        </tr>
+        <tr>
+          <td>Tie Dye</td>
+          <td>Peanut Butter</td>
+          <td>Cookie Dough</td>
+          <td>Ice Cream Sundae</td>
+        </tr>
+      </table>
+
+      <footer>
+        
+        <div class="magic">
+          Fairy Cakes have been sprinkled with magic!
+        </div>
+
+        <div class="magic">
+          Copyright|2015 <a href="https://en.wikipedia.org/wiki/Elf" target="_blank">Elves Inc.</a>
+        </div>
+
+      </footer>
+
+    </div>  <!-- ends wrapper -->
+
+  </body>
+  
+</html>
