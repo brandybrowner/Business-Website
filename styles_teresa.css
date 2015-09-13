@@ -24,6 +24,8 @@ brown: #624837 */
   float: right;
   margin-top: 100px;
   border: 0px;
+  height: 300px;
+  width: 300px;
 } 
 
 /*this is the code for the overall tables themselves that shows the grid of cupcakes on two pages*/
@@ -31,7 +33,7 @@ table.cupgrid {
     width:100%;
     border:0px;
    	margin: 0 auto;
-
+    max-height: 200px;
 }
 /*this is the code for the cells of the tables that show the grid of cupcakes on two pages */
 table.cupgrid td { 
@@ -40,6 +42,7 @@ table.cupgrid td {
     text-align: center;
    	color: #35cae2;
    	font-size: 24px;
+    max-height: 200px;
 }
 /*these are the styles for the redvelvet recipe page*/
 .recipetitle {
